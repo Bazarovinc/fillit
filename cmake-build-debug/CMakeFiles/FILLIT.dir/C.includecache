@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ctelma/Desktop/Projects/FILLIT/fillit.h
+get_next_line.h
+/Users/ctelma/Desktop/Projects/FILLIT/get_next_line.h
+libft/includes/libft.h
+/Users/ctelma/Desktop/Projects/FILLIT/libft/includes/libft.h
+
+/Users/ctelma/Desktop/Projects/FILLIT/get_next_line.h
+libft/includes/libft.h
+/Users/ctelma/Desktop/Projects/FILLIT/libft/includes/libft.h
+fcntl.h
+-
+
+/Users/ctelma/Desktop/Projects/FILLIT/libft/includes/libft.h
+stdlib.h
+-
+unistd.h
+-
+string.h
+-
+
+/Users/ctelma/Desktop/Projects/FILLIT/main.c
+fillit.h
+/Users/ctelma/Desktop/Projects/FILLIT/fillit.h
+
