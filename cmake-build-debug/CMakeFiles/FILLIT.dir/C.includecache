@@ -6,13 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/Users/ctelma/Desktop/Projects/FILLIT/fillit.h
+/Users/ctelma/Desktop/Projects/filit_git/create_map.c
+fillit.h
+/Users/ctelma/Desktop/Projects/filit_git/fillit.h
+
+/Users/ctelma/Desktop/Projects/filit_git/fillit.h
 libft/includes/libft.h
-/Users/ctelma/Desktop/Projects/FILLIT/libft/includes/libft.h
+/Users/ctelma/Desktop/Projects/filit_git/libft/includes/libft.h
 fcntl.h
 -
 
-/Users/ctelma/Desktop/Projects/FILLIT/libft/includes/libft.h
+/Users/ctelma/Desktop/Projects/filit_git/libft/includes/libft.h
 stdlib.h
 -
 unistd.h
@@ -20,7 +24,7 @@ unistd.h
 string.h
 -
 
-/Users/ctelma/Desktop/Projects/FILLIT/main.c
+/Users/ctelma/Desktop/Projects/filit_git/main.c
 fillit.h
-/Users/ctelma/Desktop/Projects/FILLIT/fillit.h
+/Users/ctelma/Desktop/Projects/filit_git/fillit.h
 

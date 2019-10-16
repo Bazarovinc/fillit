@@ -48,10 +48,10 @@ RM = /Users/ctelma/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/ctelma/Desktop/Projects/FILLIT
+CMAKE_SOURCE_DIR = /Users/ctelma/Desktop/Projects/filit_git
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/ctelma/Desktop/Projects/FILLIT/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/ctelma/Desktop/Projects/filit_git/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ctelma/Desktop/Projects/FILLIT/cmake-build-debug/CMakeFiles /Users/ctelma/Desktop/Projects/FILLIT/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ctelma/Desktop/Projects/filit_git/cmake-build-debug/CMakeFiles /Users/ctelma/Desktop/Projects/filit_git/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ctelma/Desktop/Projects/FILLIT/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/ctelma/Desktop/Projects/filit_git/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,140 @@ FILLIT/fast:
 	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/build
 .PHONY : FILLIT/fast
 
-get_next_line.o: get_next_line.c.o
+create_list.o: create_list.c.o
 
-.PHONY : get_next_line.o
+.PHONY : create_list.o
 
 # target to build an object file
-get_next_line.c.o:
-	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/get_next_line.c.o
-.PHONY : get_next_line.c.o
+create_list.c.o:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/create_list.c.o
+.PHONY : create_list.c.o
 
-get_next_line.i: get_next_line.c.i
+create_list.i: create_list.c.i
 
-.PHONY : get_next_line.i
+.PHONY : create_list.i
 
 # target to preprocess a source file
-get_next_line.c.i:
-	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/get_next_line.c.i
-.PHONY : get_next_line.c.i
+create_list.c.i:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/create_list.c.i
+.PHONY : create_list.c.i
 
-get_next_line.s: get_next_line.c.s
+create_list.s: create_list.c.s
 
-.PHONY : get_next_line.s
+.PHONY : create_list.s
 
 # target to generate assembly for a file
-get_next_line.c.s:
-	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/get_next_line.c.s
-.PHONY : get_next_line.c.s
+create_list.c.s:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/create_list.c.s
+.PHONY : create_list.c.s
+
+create_map.o: create_map.c.o
+
+.PHONY : create_map.o
+
+# target to build an object file
+create_map.c.o:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/create_map.c.o
+.PHONY : create_map.c.o
+
+create_map.i: create_map.c.i
+
+.PHONY : create_map.i
+
+# target to preprocess a source file
+create_map.c.i:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/create_map.c.i
+.PHONY : create_map.c.i
+
+create_map.s: create_map.c.s
+
+.PHONY : create_map.s
+
+# target to generate assembly for a file
+create_map.c.s:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/create_map.c.s
+.PHONY : create_map.c.s
+
+fill.o: fill.c.o
+
+.PHONY : fill.o
+
+# target to build an object file
+fill.c.o:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/fill.c.o
+.PHONY : fill.c.o
+
+fill.i: fill.c.i
+
+.PHONY : fill.i
+
+# target to preprocess a source file
+fill.c.i:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/fill.c.i
+.PHONY : fill.c.i
+
+fill.s: fill.c.s
+
+.PHONY : fill.s
+
+# target to generate assembly for a file
+fill.c.s:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/fill.c.s
+.PHONY : fill.c.s
+
+ft_error.o: ft_error.c.o
+
+.PHONY : ft_error.o
+
+# target to build an object file
+ft_error.c.o:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/ft_error.c.o
+.PHONY : ft_error.c.o
+
+ft_error.i: ft_error.c.i
+
+.PHONY : ft_error.i
+
+# target to preprocess a source file
+ft_error.c.i:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/ft_error.c.i
+.PHONY : ft_error.c.i
+
+ft_error.s: ft_error.c.s
+
+.PHONY : ft_error.s
+
+# target to generate assembly for a file
+ft_error.c.s:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/ft_error.c.s
+.PHONY : ft_error.c.s
+
+ft_tetramin.o: ft_tetramin.c.o
+
+.PHONY : ft_tetramin.o
+
+# target to build an object file
+ft_tetramin.c.o:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/ft_tetramin.c.o
+.PHONY : ft_tetramin.c.o
+
+ft_tetramin.i: ft_tetramin.c.i
+
+.PHONY : ft_tetramin.i
+
+# target to preprocess a source file
+ft_tetramin.c.i:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/ft_tetramin.c.i
+.PHONY : ft_tetramin.c.i
+
+ft_tetramin.s: ft_tetramin.c.s
+
+.PHONY : ft_tetramin.s
+
+# target to generate assembly for a file
+ft_tetramin.c.s:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/ft_tetramin.c.s
+.PHONY : ft_tetramin.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
@@ -1932,6 +2040,60 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/main.c.s
 .PHONY : main.c.s
 
+open_file.o: open_file.c.o
+
+.PHONY : open_file.o
+
+# target to build an object file
+open_file.c.o:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/open_file.c.o
+.PHONY : open_file.c.o
+
+open_file.i: open_file.c.i
+
+.PHONY : open_file.i
+
+# target to preprocess a source file
+open_file.c.i:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/open_file.c.i
+.PHONY : open_file.c.i
+
+open_file.s: open_file.c.s
+
+.PHONY : open_file.s
+
+# target to generate assembly for a file
+open_file.c.s:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/open_file.c.s
+.PHONY : open_file.c.s
+
+read_from_file.o: read_from_file.c.o
+
+.PHONY : read_from_file.o
+
+# target to build an object file
+read_from_file.c.o:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/read_from_file.c.o
+.PHONY : read_from_file.c.o
+
+read_from_file.i: read_from_file.c.i
+
+.PHONY : read_from_file.i
+
+# target to preprocess a source file
+read_from_file.c.i:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/read_from_file.c.i
+.PHONY : read_from_file.c.i
+
+read_from_file.s: read_from_file.c.s
+
+.PHONY : read_from_file.s
+
+# target to generate assembly for a file
+read_from_file.c.s:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/read_from_file.c.s
+.PHONY : read_from_file.c.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -1941,9 +2103,21 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... FILLIT"
-	@echo "... get_next_line.o"
-	@echo "... get_next_line.i"
-	@echo "... get_next_line.s"
+	@echo "... create_list.o"
+	@echo "... create_list.i"
+	@echo "... create_list.s"
+	@echo "... create_map.o"
+	@echo "... create_map.i"
+	@echo "... create_map.s"
+	@echo "... fill.o"
+	@echo "... fill.i"
+	@echo "... fill.s"
+	@echo "... ft_error.o"
+	@echo "... ft_error.i"
+	@echo "... ft_error.s"
+	@echo "... ft_tetramin.o"
+	@echo "... ft_tetramin.i"
+	@echo "... ft_tetramin.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -2142,6 +2316,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... open_file.o"
+	@echo "... open_file.i"
+	@echo "... open_file.s"
+	@echo "... read_from_file.o"
+	@echo "... read_from_file.i"
+	@echo "... read_from_file.s"
 .PHONY : help
 
 

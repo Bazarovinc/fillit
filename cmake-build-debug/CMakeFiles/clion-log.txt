@@ -1,4 +1,4 @@
-/Users/ctelma/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/ctelma/Desktop/Projects/FILLIT
+/Users/ctelma/Desktop/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/ctelma/Desktop/Projects/filit_git
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/ctelma/Desktop/Projects/FILLIT/cmake-build-debug
+-- Build files have been written to: /Users/ctelma/Desktop/Projects/filit_git/cmake-build-debug

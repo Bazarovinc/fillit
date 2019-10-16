@@ -74,6 +74,4 @@ add_executable(FILLIT
     libft/ft_tolower.c
     libft/ft_toupper.c
     fillit.h
-    get_next_line.c
-    get_next_line.h
-    main.c)
+        main.c read_from_file.c ft_error.c ft_tetramin.c create_list.c open_file.c fill.c create_map.c)

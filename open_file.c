@@ -1,33 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   get_next_line.h                                    :+:      :+:    :+:   */
+/*   open_file.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/09/13 16:29:35 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/06 13:00:19 by ctelma           ###   ########.fr       */
+/*   Created: 2019/10/16 13:16:50 by ctelma            #+#    #+#             */
+/*   Updated: 2019/10/16 13:21:05 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef GET_NEXT_LINE_H
-# define GET_NEXT_LINE_H
+#include "fillit.h"
 
-# include "libft/includes/libft.h"
-
-# include <fcntl.h>
-
-# define BUFF_SIZE 5
-
-typedef	struct s_node	t_node;
-
-struct					s_node
+void	open_file(t_tetra **cur)
 {
-	char	*s;
-	int		fd;
-	t_node	*next;
-};
+	int fd;
 
-int						get_next_line(const int fd, char **line);
-
-#endif
+	fd = open("test", O_RDONLY);
+	read_from_file(cur, fd);
+	close(fd);
+}
