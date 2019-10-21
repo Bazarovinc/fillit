@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/06 12:55:44 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/20 15:32:07 by ctelma           ###   ########.fr       */
+/*   Updated: 2019/10/21 15:46:26 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,30 +18,12 @@ int		main(void)
 	static t_tetra	*tet;
 	t_map			*map;
 	t_tetra			**cur;
-	int				i;
-	int				j;
+	int quant;
+	int check;
 
 	cur = &tet;
-	map->map = create_map(size_map(open_file(cur)), &map);
-	/*while (*cur)
-	{
-		ft_putnbr((*cur)->tetramin);
-		ft_putchar('\t');
-		ft_putnbr((*cur)->id);
-		*cur = (*cur)->next;
-		ft_putchar('\n');
-	}*/
-	i = 0;
-	fill(map, *cur);
-	while (i < map->map_size)
-	{
-		j = 0;
-		while (j < map->map_size)
-		{
-			ft_putnbr(map->map[i][j]);
-			j++;
-		}
-		ft_putchar('\n');
-		i++;
-	}
+	if (create_map(size_map(open_file(cur, &quant)), &map))
+		while (fill(map, *cur, quant, 0) == 0)
+			create_map(map->map_size + 1, &map);
+	print_map(map->map, map->map_size);
 }

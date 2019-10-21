@@ -1,35 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   print_map.c                                        :+:      :+:    :+:   */
+/*   clean_map.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/20 16:10:50 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/20 16:19:43 by ctelma           ###   ########.fr       */
+/*   Created: 2019/10/21 16:05:10 by ctelma            #+#    #+#             */
+/*   Updated: 2019/10/21 16:05:10 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-void print_map(int **map, int size)
+void	clean_map(int **nums)
 {
 	int i;
-	int j;
 
 	i = 0;
-	while (i < size)
+	if (nums != NULL)
 	{
-		j = 0;
-		while (j < size)
+		while (nums[i])
 		{
-			if (map[i][j] == 0)
-				ft_putchar('.');
-			else
-				ft_putchar('A' + map[i][j] - 1);
-			j++;
+			free(nums[i]);
+			i++;
 		}
-		ft_putchar('\n');
-		i++;
+		free(nums);
 	}
 }

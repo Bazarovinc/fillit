@@ -56,7 +56,7 @@ static int	looking_scnd_part(int i, char *s)
 		return (15);
 	if (s[i] == '#' && s[i + 1] == '#' && s[i + 6] == '#' && s[i + 7] == '#')
 		return (16);
-	if (s[i] == '#' && s[i + 1] == '#' && s[i + 3] == '#' && s[i + 4] == '#')
+	if (s[i] == '#' && s[i + 1] == '#' && s[i + 4] == '#' && s[i + 5] == '#')
 		return (17);
 	if (s[i] == '#' && s[i + 4] == '#' && s[i + 5] == '#' && s[i + 9] == '#')
 		return (18);

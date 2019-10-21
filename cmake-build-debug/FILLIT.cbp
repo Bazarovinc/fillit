@@ -87,6 +87,9 @@
 		<Unit filename="/Users/ctelma/Desktop/test/check_place.c">
 			<Option target="FILLIT"/>
 		</Unit>
+		<Unit filename="/Users/ctelma/Desktop/test/clean_map.c">
+			<Option target="FILLIT"/>
+		</Unit>
 		<Unit filename="/Users/ctelma/Desktop/test/create_list.c">
 			<Option target="FILLIT"/>
 		</Unit>

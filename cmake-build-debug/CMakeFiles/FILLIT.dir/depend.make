@@ -5,6 +5,10 @@ CMakeFiles/FILLIT.dir/check_place.c.o: ../check_place.c
 CMakeFiles/FILLIT.dir/check_place.c.o: ../fillit.h
 CMakeFiles/FILLIT.dir/check_place.c.o: ../libft/includes/libft.h
 
+CMakeFiles/FILLIT.dir/clean_map.c.o: ../clean_map.c
+CMakeFiles/FILLIT.dir/clean_map.c.o: ../fillit.h
+CMakeFiles/FILLIT.dir/clean_map.c.o: ../libft/includes/libft.h
+
 CMakeFiles/FILLIT.dir/create_list.c.o: ../create_list.c
 CMakeFiles/FILLIT.dir/create_list.c.o: ../fillit.h
 CMakeFiles/FILLIT.dir/create_list.c.o: ../libft/includes/libft.h

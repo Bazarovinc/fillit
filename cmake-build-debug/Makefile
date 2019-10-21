@@ -150,6 +150,33 @@ check_place.c.s:
 	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/check_place.c.s
 .PHONY : check_place.c.s
 
+clean_map.o: clean_map.c.o
+
+.PHONY : clean_map.o
+
+# target to build an object file
+clean_map.c.o:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/clean_map.c.o
+.PHONY : clean_map.c.o
+
+clean_map.i: clean_map.c.i
+
+.PHONY : clean_map.i
+
+# target to preprocess a source file
+clean_map.c.i:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/clean_map.c.i
+.PHONY : clean_map.c.i
+
+clean_map.s: clean_map.c.s
+
+.PHONY : clean_map.s
+
+# target to generate assembly for a file
+clean_map.c.s:
+	$(MAKE) -f CMakeFiles/FILLIT.dir/build.make CMakeFiles/FILLIT.dir/clean_map.c.s
+.PHONY : clean_map.c.s
+
 create_list.o: create_list.c.o
 
 .PHONY : create_list.o
@@ -2241,6 +2268,9 @@ help:
 	@echo "... check_place.o"
 	@echo "... check_place.i"
 	@echo "... check_place.s"
+	@echo "... clean_map.o"
+	@echo "... clean_map.i"
+	@echo "... clean_map.s"
 	@echo "... create_list.o"
 	@echo "... create_list.i"
 	@echo "... create_list.s"

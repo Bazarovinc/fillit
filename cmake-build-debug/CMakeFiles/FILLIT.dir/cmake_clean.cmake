@@ -77,6 +77,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/FILLIT.dir/delete_from_map.c.o"
   "CMakeFiles/FILLIT.dir/check_place.c.o"
   "CMakeFiles/FILLIT.dir/print_map.c.o"
+  "CMakeFiles/FILLIT.dir/clean_map.c.o"
   "FILLIT.pdb"
   "FILLIT"
 )

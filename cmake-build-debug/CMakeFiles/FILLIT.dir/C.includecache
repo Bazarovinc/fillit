@@ -6,23 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/ctelma/Desktop/test/check_place.c
-fillit.h
-/Users/ctelma/Desktop/test/fillit.h
-
-/Users/ctelma/Desktop/test/create_list.c
-fillit.h
-/Users/ctelma/Desktop/test/fillit.h
-
 /Users/ctelma/Desktop/test/create_map.c
-fillit.h
-/Users/ctelma/Desktop/test/fillit.h
-
-/Users/ctelma/Desktop/test/delete_from_map.c
-fillit.h
-/Users/ctelma/Desktop/test/fillit.h
-
-/Users/ctelma/Desktop/test/fill.c
 fillit.h
 /Users/ctelma/Desktop/test/fillit.h
 
@@ -32,14 +16,6 @@ libft/includes/libft.h
 fcntl.h
 -
 
-/Users/ctelma/Desktop/test/ft_error.c
-fillit.h
-/Users/ctelma/Desktop/test/fillit.h
-
-/Users/ctelma/Desktop/test/ft_tetramin.c
-fillit.h
-/Users/ctelma/Desktop/test/fillit.h
-
 /Users/ctelma/Desktop/test/libft/includes/libft.h
 stdlib.h
 -
@@ -47,32 +23,4 @@ unistd.h
 -
 string.h
 -
-
-/Users/ctelma/Desktop/test/main.c
-stdio.h
--
-fillit.h
-/Users/ctelma/Desktop/test/fillit.h
-
-/Users/ctelma/Desktop/test/open_file.c
-fillit.h
-/Users/ctelma/Desktop/test/fillit.h
-
-/Users/ctelma/Desktop/test/print_map.c
-fillit.h
-/Users/ctelma/Desktop/test/fillit.h
-
-/Users/ctelma/Desktop/test/put_in_map.c
-fillit.h
-/Users/ctelma/Desktop/test/fillit.h
-
-/Users/ctelma/Desktop/test/read_from_file.c
-stdio.h
--
-fillit.h
-/Users/ctelma/Desktop/test/fillit.h
-
-/Users/ctelma/Desktop/test/size_map.c
-fillit.h
-/Users/ctelma/Desktop/test/fillit.h
 
