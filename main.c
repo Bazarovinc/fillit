@@ -6,24 +6,20 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/06 12:55:44 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/21 15:46:26 by ctelma           ###   ########.fr       */
+/*   Updated: 2019/10/24 20:31:39 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "fillit.h"
 
-int		main(void)
+int        main(int argc, char **argv)
 {
-	static t_tetra	*tet;
-	t_map			*map;
-	t_tetra			**cur;
-	int				quant;
-	int				check;
-
-	cur = &tet;
-	if (create_map(size_map(open_file(cur, &quant)), &map))
-		while (fill(map, *cur, quant, 0) == 0)
-			create_map(map->map_size + 1, &map);
-	print_map(map->map, map->map_size);
+	if (argc == 2)
+		solve(argv[1]);
+	else
+	{
+		ft_putstr("error\n");
+		return (1);
+	}
+	return (0);
 }

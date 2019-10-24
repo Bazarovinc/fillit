@@ -6,16 +6,11 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 17:10:25 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/12 17:10:56 by ctelma           ###   ########.fr       */
+/*   Updated: 2019/10/24 20:36:15 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
-
-/*
-**	СОЗДАЕТ ЭЛЕМЕНТ С ВЕРИФИЦИРОВАННОЙ ТЕТРАМИНКОЙ 	**
-**	И ДОБАВЛЯЕТ ЕГО В КОНЕЦ СПИСКА 					**
-*/
 
 static t_tetra	*create_id(int id, char *s)
 {
@@ -24,7 +19,8 @@ static t_tetra	*create_id(int id, char *s)
 	new = NULL;
 	if (id)
 	{
-		new = (t_tetra *)malloc(sizeof(t_tetra));
+		if (!(new = (t_tetra *)malloc(sizeof(t_tetra))))
+			return (NULL);
 		new->tetramin = ft_tetramin(s);
 		new->id = id;
 		new->next = NULL;

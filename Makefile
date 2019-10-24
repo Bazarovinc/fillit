@@ -6,44 +6,48 @@
 #    By: ophuong <ophuong@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/23 20:26:08 by ophuong           #+#    #+#              #
-#    Updated: 2019/10/24 19:08:35 by ophuong          ###   ########.fr        #
+#    Updated: 2019/10/24 21:32:10 by ctelma           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = fillit
 
-FLAG = -Wall -Wextra -Werror
-
-INC_DIRS = -I./libft/includes - I./
-
 CC = gcc
 
-LIB_FT = -L/libft/ -lft
+FLAG = -Wall -Wextra -Werror
 
-SRC = check_place.c clean_map.c create_list.c create_map.c \
-	delete_from_map.c fill.c ft_error.c ft_tetramine.c main.c \
-	open_file.c print_map.c put_in_map.c read_from_file.c \
-	size_map.c
+FLAGINC = -I
 
-OBJ = $(src:.c=.o)
+PATH_LIB = ./libft/
+
+HEARDS = fillit.h
+
+CFILE = check_place.c clean_map.c create_list.c create_map.c \
+        delete_from_map.c fill.c ft_error.c ft_tetramin.c \
+        open_file.c print_map.c put_in_map.c read_from_file.c \
+        size_map.c clean_list.c clear_memory.c map_new.c solve.c\
+        main.c
+
+OBG = check_place.o clean_map.o create_list.o create_map.o \
+		delete_from_map.o fill.o ft_error.o ft_tetramin.o \
+		open_file.o print_map.o put_in_map.o read_from_file.o \
+		size_map.o clean_list.o clear_memory.o map_new.o solve.o\
+		main.o
 
 all: $(NAME)
+$(NAME): $(OBG)
+	make $(FLAG) -C $(PATH_LIB)
+	$(CC) -I $(HEARDS) -o $(NAME) $(OBG) -L $(PATH_LIB) -lft
 
-$(NAME): $(OBJ)
-	@$(MAKE) -C ./libft
-	$(CC) $(FLAG) $(INC_DIRS) $(LIB_FT) $(OBJ) -o $(NAME)
-
-%.o: %.c
-	$(CC) $(FLAG) $(INC_DIRS) -c $< -o $@
+%.o: %.c $(HEARDS)
+	$(CC) $(FLAGINC) $(FLAG) -c $< -o $@
 
 clean:
-	rm -rf $(OBJ)
-	@$(MAKE) -C ./libft clean
+	make -C $(PATH_LIB) clean
+	rm -f $(OBG)
 
 fclean: clean
-	rm -rf $(NAME)
-	@$(MAKE) -C ./libft fclean
+	make -C $(PATH_LIB) fclean
+	rm -f $(NAME)
 
 re: fclean all
-
-.PHONY: all clean fclean re mlft

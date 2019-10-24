@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/06 12:54:34 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/21 16:06:06 by ctelma           ###   ########.fr       */
+/*   Updated: 2019/10/24 20:48:34 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,18 +62,24 @@ struct					s_map
 	int					map_size;
 };
 
-int						read_from_file(t_tetra **tet, int fd);
-void					ft_error(t_tetra *tet);
+
+void					solve(char *file);
+t_map					*map_new(void);
+int						read_from_file(t_tetra **tet, int fd, t_map *map);
+void					ft_error(t_tetra *tet, t_map *map);
 t_tetra					*create_list(t_tetra **begin, int id, char *s);
 int						ft_tetramin(char *s);
-int						open_file(t_tetra **cur, int *quant);
-int						create_map(int size, t_map **map);
+int						open_file(t_tetra **cur, int *quant, char *file,
+									 t_map *map);
+int						create_map(int size, t_map *map);
 int						size_map(int nb_tet);
 void					put_in_map(t_map *map, t_tetra *cur, int i, int j);
 void					delete_from_map(t_map *map, t_tetra *cur);
 int						check_place(t_map *map, t_tetra *cur, int i, int j);
 int						fill(t_map *map, t_tetra *cur, int quant, int op);
 void					print_map(int **map, int size);
-void					clean_map(int **nums);
+void					clean_map(int **nums, int size);
+void					clean_list(t_tetra *tet, t_map *map);
+void					clear_memory(t_map *map, t_tetra *cur);
 
 #endif

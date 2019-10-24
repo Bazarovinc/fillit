@@ -12,17 +12,18 @@
 
 #include "fillit.h"
 
-/*
-**	ОТКРЫВАЕТ ФАЙЛ С ТЕТРАМИНКАМИ **
-*/
-
-int		open_file(t_tetra **cur, int *quant)
+int						open_file(t_tetra **cur, int *quant, char *file, t_map *map)
 {
 	int fd;
 	int id;
 
-	fd = open("test", O_RDONLY);
-	id = read_from_file(cur, fd);
+	fd = open(file, O_RDONLY);
+	if (fd < 0)
+	{
+		ft_putstr_fd("error\n", 1);
+		exit(1);
+	}
+	id = read_from_file(cur, fd, map);
 	id--;
 	*quant = id;
 	close(fd);

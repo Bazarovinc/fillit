@@ -12,14 +12,14 @@
 
 #include "fillit.h"
 
-void	clean_map(int **nums)
+void	clean_map(int **nums, int size)
 {
 	int i;
 
 	i = 0;
 	if (nums != NULL)
 	{
-		while (nums[i])
+		while (i < size)
 		{
 			free(nums[i]);
 			i++;
