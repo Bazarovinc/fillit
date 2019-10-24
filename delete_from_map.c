@@ -12,7 +12,7 @@
 
 #include "fillit.h"
 
-void delete_from_map(t_map *map, t_tetra *cur)
+void	delete_from_map(t_map *map, t_tetra *cur)
 {
 	int i;
 	int j;

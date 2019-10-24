@@ -66,7 +66,7 @@ int				create_map(int size, t_map **map)
 
 	if (!(*map)->map)
 	{
-		if(!((*map)->map = (int**)malloc(sizeof(int*) * size)))
+		if (!((*map)->map = (int**)malloc(sizeof(int*) * size)))
 			return (0);
 		i = 0;
 		while (i < size)

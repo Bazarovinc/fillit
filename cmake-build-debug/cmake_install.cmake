@@ -1,4 +1,4 @@
-# Install script for directory: /Users/ctelma/Desktop/test
+# Install script for directory: /Users/ophuong/fillit
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/ctelma/Desktop/test/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/ophuong/fillit/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

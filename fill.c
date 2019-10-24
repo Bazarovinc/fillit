@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 14:20:52 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/21 14:54:24 by ctelma           ###   ########.fr       */
+/*   Updated: 2019/10/23 19:29:22 by ophuong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,17 +39,14 @@ static int	try_to_put(t_map *map, t_tetra *cur, int i, int j)
 	return (1);
 }
 
-int			fill(t_map *map, t_tetra *cur, int quant, int op) {
+static int	f_return(t_map *map, t_tetra *cur, int quant, int op)
+{
 	int i;
 	int j;
 
 	i = 0;
-	if (op == quant)
-		return (1);
-	if (cur)
+	while (i < map->map_size)
 	{
-		get_size(cur);
-		while (i < map->map_size)
 		{
 			j = 0;
 			while (j < map->map_size)
@@ -67,6 +64,17 @@ int			fill(t_map *map, t_tetra *cur, int quant, int op) {
 			i++;
 		}
 	}
+	return (0);
+}
 
+int			fill(t_map *map, t_tetra *cur, int quant, int op)
+{
+	if (op == quant)
+		return (1);
+	if (cur)
+	{
+		get_size(cur);
+		return (f_return(map, cur, quant, op));
+	}
 	return (0);
 }

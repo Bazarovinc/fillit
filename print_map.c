@@ -12,7 +12,7 @@
 
 #include "fillit.h"
 
-void print_map(int **map, int size)
+void	print_map(int **map, int size)
 {
 	int i;
 	int j;

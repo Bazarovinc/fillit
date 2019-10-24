@@ -18,8 +18,8 @@ int		main(void)
 	static t_tetra	*tet;
 	t_map			*map;
 	t_tetra			**cur;
-	int quant;
-	int check;
+	int				quant;
+	int				check;
 
 	cur = &tet;
 	if (create_map(size_map(open_file(cur, &quant)), &map))

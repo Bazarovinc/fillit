@@ -12,7 +12,7 @@
 
 #include "fillit.h"
 
-static void part_1(t_map *map, t_tetra *cur, int i, int j)
+static void		part_1(t_map *map, t_tetra *cur, int i, int j)
 {
 	if (cur->tetramin == 1)
 		P_1(map->map, i, j, cur->id);
@@ -36,7 +36,7 @@ static void part_1(t_map *map, t_tetra *cur, int i, int j)
 		P_10(map->map, i, j, cur->id);
 }
 
-static void part_2(t_map *map, t_tetra *cur, int i, int j)
+static void		part_2(t_map *map, t_tetra *cur, int i, int j)
 {
 	if (cur->tetramin == 11)
 		P_11(map->map, i, j, cur->id);
@@ -58,9 +58,8 @@ static void part_2(t_map *map, t_tetra *cur, int i, int j)
 		P_19(map->map, i, j, cur->id);
 }
 
-void put_in_map(t_map *map, t_tetra *cur, int i, int j)
+void			put_in_map(t_map *map, t_tetra *cur, int i, int j)
 {
-
 	if (cur->tetramin >= 1 && cur->tetramin <= 10)
 		part_1(map, cur, i, j);
 	if (cur->tetramin >= 11 && cur->tetramin <= 19)

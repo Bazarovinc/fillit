@@ -6,5 +6,5 @@ C_FLAGS = -g   -std=gnu11
 
 C_DEFINES = 
 
-C_INCLUDES = -I/Users/ctelma/Desktop/test/. -I/Users/ctelma/Desktop/test/libft/includes 
+C_INCLUDES = -I/Users/ophuong/fillit/. -I/Users/ophuong/fillit/libft/includes 
 

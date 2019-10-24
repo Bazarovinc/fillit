@@ -6,13 +6,13 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/20 11:30:28 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/20 12:41:57 by ctelma           ###   ########.fr       */
+/*   Updated: 2019/10/23 18:54:08 by ophuong          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "fillit.h"
 
-static	int part_one(t_map *map, int tet, int i, int j)
+static	int		part_one(t_map *map, int tet, int i, int j)
 {
 	if (tet == 1 && map->map[i][j] == 0 && map->map[i + 1][j] == 0
 		&& map->map[i + 2][j] == 0 && map->map[i + 3][j] == 0)
@@ -38,7 +38,7 @@ static	int part_one(t_map *map, int tet, int i, int j)
 	return (0);
 }
 
-static int	part_two(t_map *map, int tet, int i, int j)
+static int		part_two(t_map *map, int tet, int i, int j)
 {
 	if (tet == 8 && map->map[i][j] == 0 && map->map[i + 1][j] == 0
 		&& map->map[i + 1][j + 1] == 0 && map->map[i + 1][j + 2] == 0)
@@ -64,7 +64,7 @@ static int	part_two(t_map *map, int tet, int i, int j)
 	return (0);
 }
 
-static int	part_three(t_map *map, int tet, int i, int j)
+static int		part_three(t_map *map, int tet, int i, int j)
 {
 	if (tet == 15 && map->map[i][j + 1] == 0 && map->map[i + 1][j + 1] == 0
 		&& map->map[i + 1][j] == 0 && map->map[i + 2][j + 1] == 0)
@@ -84,7 +84,7 @@ static int	part_three(t_map *map, int tet, int i, int j)
 	return (0);
 }
 
-int		check_place(t_map *map, t_tetra *cur, int i, int j)
+int				check_place(t_map *map, t_tetra *cur, int i, int j)
 {
 	if (part_one(map, cur->tetramin, i, j) != 0)
 		return (0);
