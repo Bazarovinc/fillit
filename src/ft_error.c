@@ -6,7 +6,7 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 16:58:27 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/26 12:42:19 by ctelma           ###   ########.fr       */
+/*   Updated: 2019/10/26 16:50:41 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,6 @@
 void		ft_error(t_tetra *tet, t_map *map)
 {
 	clean_list(tet, map);
-	ft_putstr_fd("error", 1);
+	ft_putstr("error\n");
 	exit(1);
 }
