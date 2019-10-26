@@ -6,11 +6,11 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/20 11:30:28 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/23 18:54:08 by ophuong          ###   ########.fr       */
+/*   Updated: 2019/10/26 12:42:19 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../header/fillit.h"
 
 static	int		part_one(t_map *map, int tet, int i, int j)
 {

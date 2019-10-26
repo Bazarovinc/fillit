@@ -6,11 +6,11 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/16 14:37:25 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/24 21:16:06 by ctelma           ###   ########.fr       */
+/*   Updated: 2019/10/26 12:42:19 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../header/fillit.h"
 
 static void		put_new(int size, int **map_n)
 {
@@ -47,7 +47,8 @@ static int		**re_recreation(int size_new, int size_old, int **map_o)
 		j = 0;
 		if ((map_n[i] = (int*)malloc(sizeof(int) * size_new)))
 		{
-			while (j < size_old) {
+			while (j < size_old)
+			{
 				map_n[i][j] = map_o[i][j];
 				j++;
 			}

@@ -1,34 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clean_list.c                                       :+:      :+:    :+:   */
+/*   ft_error.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/24 20:07:48 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/24 20:09:23 by ctelma           ###   ########.fr       */
+/*   Created: 2019/10/12 16:58:27 by ctelma            #+#    #+#             */
+/*   Updated: 2019/10/26 12:42:19 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../header/fillit.h"
 
-void	clean_list(t_tetra *tet, t_map *map)
+void		ft_error(t_tetra *tet, t_map *map)
 {
-	t_tetra *cur;
-
-	if (tet)
-	{
-		cur = tet;
-		while (tet)
-		{
-			cur = tet->next;
-			tet->tetramin = 0;
-			tet->id = 0;
-			tet->next = NULL;
-			free(tet);
-			tet = cur;
-		}
-	}
-	if (map)
-		free(map);
+	clean_list(tet, map);
+	ft_putstr_fd("error", 1);
+	exit(1);
 }

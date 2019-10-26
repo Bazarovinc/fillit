@@ -1,28 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   size_map.c                                         :+:      :+:    :+:   */
+/*   delete_from_map.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ophuong <ophuong@student.42.fr>            +#+  +:+       +#+        */
+/*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/19 17:23:24 by ophuong           #+#    #+#             */
-/*   Updated: 2019/10/19 18:20:45 by ophuong          ###   ########.fr       */
+/*   Created: 2019/10/20 11:16:15 by ctelma            #+#    #+#             */
+/*   Updated: 2019/10/26 12:42:19 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../header/fillit.h"
 
-int		size_map(int nb_tet)
+void	delete_from_map(t_map *map, t_tetra *cur)
 {
-	int size;
+	int i;
+	int j;
 
-	if (ft_sqrt(nb_tet * 4) != 0)
-		size = ft_sqrt(nb_tet * 4);
-	else
+	i = 0;
+	while (i < map->map_size)
 	{
-		while (ft_sqrt(nb_tet * 4) == 0)
-			nb_tet--;
-		size = ft_sqrt(nb_tet * 4) + 1;
+		j = 0;
+		while (j < map->map_size)
+		{
+			if (map->map[i][j] == cur->id)
+				map->map[i][j] = 0;
+			j++;
+		}
+		i++;
 	}
-	return (size);
 }

@@ -6,7 +6,7 @@
 #    By: ophuong <ophuong@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/10/23 20:26:08 by ophuong           #+#    #+#              #
-#    Updated: 2019/10/24 21:32:10 by ctelma           ###   ########.fr        #
+#    Updated: 2019/10/26 12:39:17 by ctelma           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,19 +20,19 @@ FLAGINC = -I
 
 PATH_LIB = ./libft/
 
-HEARDS = fillit.h
+HEARDS = header/fillit.h
 
-CFILE = check_place.c clean_map.c create_list.c create_map.c \
-        delete_from_map.c fill.c ft_error.c ft_tetramin.c \
-        open_file.c print_map.c put_in_map.c read_from_file.c \
-        size_map.c clean_list.c clear_memory.c map_new.c solve.c\
-        main.c
+CFILE = src/check_place.c src/clean_map.c src/create_list.c src/create_map.c \
+        src/delete_from_map.c src/fill.c src/ft_error.c src/ft_tetramin.c \
+        src/open_file.c src/print_map.c src/put_in_map.c src/read_from_file.c \
+        src/size_map.c src/clean_list.c src/clear_memory.c src/map_new.c \
+	src/solve.c src/main.c
 
-OBG = check_place.o clean_map.o create_list.o create_map.o \
-		delete_from_map.o fill.o ft_error.o ft_tetramin.o \
-		open_file.o print_map.o put_in_map.o read_from_file.o \
-		size_map.o clean_list.o clear_memory.o map_new.o solve.o\
-		main.o
+OBG = src/check_place.o src/clean_map.o src/create_list.o src/create_map.o \
+        src/delete_from_map.o src/fill.o src/ft_error.o src/ft_tetramin.o \
+        src/open_file.o src/print_map.o src/put_in_map.o src/read_from_file.o \
+        src/size_map.o src/clean_list.o src/clear_memory.o src/map_new.o \
+	src/solve.o src/main.o
 
 all: $(NAME)
 $(NAME): $(OBG)

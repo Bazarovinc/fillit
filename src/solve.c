@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   solve.c                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/06 12:55:44 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/24 20:31:39 by ctelma           ###   ########.fr       */
+/*   Created: 2019/10/24 20:02:21 by ctelma            #+#    #+#             */
+/*   Updated: 2019/10/26 12:42:19 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../header/fillit.h"
 
-int        main(int argc, char **argv)
+void					solve(char *file)
 {
-	if (argc == 2)
-		solve(argv[1]);
-	else
-	{
-		ft_putstr("error\n");
-		return (1);
-	}
-	return (0);
+	t_map			*map;
+	t_tetra			*cur;
+	int				quant;
+
+	map = map_new();
+	if (create_map(size_map(open_file(&cur, &quant, file, map)), map))
+		while (fill(map, cur, quant, 0) == 0)
+			create_map(map->map_size + 1, map);
+	print_map(map->map, map->map_size);
+	clear_memory(map, cur);
 }

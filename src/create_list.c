@@ -6,11 +6,11 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 17:10:25 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/24 20:36:15 by ctelma           ###   ########.fr       */
+/*   Updated: 2019/10/26 12:42:19 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../header/fillit.h"
 
 static t_tetra	*create_id(int id, char *s)
 {

@@ -1,27 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   solve.c                                            :+:      :+:    :+:   */
+/*   print_map.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/24 20:02:21 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/24 20:19:35 by ctelma           ###   ########.fr       */
+/*   Created: 2019/10/20 16:10:50 by ctelma            #+#    #+#             */
+/*   Updated: 2019/10/26 12:42:19 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../header/fillit.h"
 
-void					solve(char *file)
+void	print_map(int **map, int size)
 {
-	t_map			*map;
-	t_tetra			*cur;
-	int				quant;
+	int i;
+	int j;
 
-	map = map_new();
-	if (create_map(size_map(open_file(&cur, &quant, file, map)), map))
-		while (fill(map, cur, quant, 0) == 0)
-			create_map(map->map_size + 1, map);
-	print_map(map->map, map->map_size);
-	clear_memory(map, cur);
+	i = 0;
+	while (i < size)
+	{
+		j = 0;
+		while (j < size)
+		{
+			if (map[i][j] == 0)
+				ft_putchar('.');
+			else
+				ft_putchar('A' + map[i][j] - 1);
+			j++;
+		}
+		ft_putchar('\n');
+		i++;
+	}
 }

@@ -1,23 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   map_new.c                                          :+:      :+:    :+:   */
+/*   clean_list.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/24 20:03:40 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/24 20:03:40 by ctelma           ###   ########.fr       */
+/*   Created: 2019/10/24 20:07:48 by ctelma            #+#    #+#             */
+/*   Updated: 2019/10/26 12:42:19 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../header/fillit.h"
 
-t_map					*map_new(void)
+void	clean_list(t_tetra *tet, t_map *map)
 {
-	t_map *map;
+	t_tetra *cur;
 
-	if (!(map = (t_map*)malloc(sizeof(t_map))))
-		return (NULL);
-	map->map_size = 0;
-	return (map);
+	if (tet)
+	{
+		cur = tet;
+		while (tet)
+		{
+			cur = tet->next;
+			tet->tetramin = 0;
+			tet->id = 0;
+			tet->next = NULL;
+			free(tet);
+			tet = cur;
+		}
+	}
+	if (map)
+		free(map);
 }

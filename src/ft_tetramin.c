@@ -6,11 +6,11 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 17:08:21 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/12 17:08:21 by ctelma           ###   ########.fr       */
+/*   Updated: 2019/10/26 12:42:19 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../header/fillit.h"
 
 static int	looking_frst_part(int i, char *s)
 {

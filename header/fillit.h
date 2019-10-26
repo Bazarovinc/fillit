@@ -6,14 +6,14 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/06 12:54:34 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/24 20:48:34 by ctelma           ###   ########.fr       */
+/*   Updated: 2019/10/26 12:24:57 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FILLIT_H
 # define FILLIT_H
 
-# include "libft/includes/libft.h"
+# include "../libft/includes/libft.h"
 # include <fcntl.h>
 
 # define BUFF_SIZE 21
@@ -62,7 +62,6 @@ struct					s_map
 	int					map_size;
 };
 
-
 void					solve(char *file);
 t_map					*map_new(void);
 int						read_from_file(t_tetra **tet, int fd, t_map *map);
@@ -70,7 +69,7 @@ void					ft_error(t_tetra *tet, t_map *map);
 t_tetra					*create_list(t_tetra **begin, int id, char *s);
 int						ft_tetramin(char *s);
 int						open_file(t_tetra **cur, int *quant, char *file,
-									 t_map *map);
+						t_map *map);
 int						create_map(int size, t_map *map);
 int						size_map(int nb_tet);
 void					put_in_map(t_map *map, t_tetra *cur, int i, int j);

@@ -6,11 +6,11 @@
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/20 11:12:02 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/20 14:55:59 by ctelma           ###   ########.fr       */
+/*   Updated: 2019/10/26 12:42:19 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../header/fillit.h"
 
 static void		part_1(t_map *map, t_tetra *cur, int i, int j)
 {

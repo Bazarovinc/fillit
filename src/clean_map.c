@@ -1,31 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   open_file.c                                        :+:      :+:    :+:   */
+/*   clean_map.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ctelma <ctelma@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2019/10/16 13:16:50 by ctelma            #+#    #+#             */
-/*   Updated: 2019/10/21 15:10:37 by ctelma           ###   ########.fr       */
+/*   Created: 2019/10/21 16:05:10 by ctelma            #+#    #+#             */
+/*   Updated: 2019/10/26 12:42:19 by ctelma           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "fillit.h"
+#include "../header/fillit.h"
 
-int						open_file(t_tetra **cur, int *quant, char *file, t_map *map)
+void	clean_map(int **nums, int size)
 {
-	int fd;
-	int id;
+	int i;
 
-	fd = open(file, O_RDONLY);
-	if (fd < 0)
+	i = 0;
+	if (nums != NULL)
 	{
-		ft_putstr_fd("error\n", 1);
-		exit(1);
+		while (i < size)
+		{
+			if (nums[i])
+				free(nums[i]);
+			i++;
+		}
+		free(nums);
 	}
-	id = read_from_file(cur, fd, map);
-	id--;
-	*quant = id;
-	close(fd);
-	return (id);
 }
