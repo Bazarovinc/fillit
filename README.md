@@ -47,4 +47,5 @@ example.fillit:
 .#..
 ....
 ```
+## Result
 <img align="center" src="https://github.com/Bazarovinc/fillit/blob/master/imagies/result.jpg" width="50%" heihg="50%"/>
