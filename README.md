@@ -1,6 +1,12 @@
 # fillit
-Clone the repo.
-Create file that look like this:
+This the algoritmic project from School 21. In this project we should place tetraminos in the smalles squeare.
+## Usage
+```
+>make
+>./fillit example.fillit
+```
+example.fillit:
+```
 ...#
 ...#
 ...#
@@ -40,50 +46,5 @@ Create file that look like this:
 ###.
 .#..
 ....
+```
 
-Use cat -e, to see how it looks, it shoold look like this:
-
-$> cat sample.fillit | cat -e
-...#$
-...#$
-...#$
-...#$
-$
-....$
-....$
-....$
-####$
-$
-.###$
-...#$
-....$
-....$
-$
-....$
-..##$
-.##.$
-....$
-$
-....$
-.##.$
-.##.$
-....$
-$
-....$
-....$
-##..$
-.##.$
-$
-##..$
-.#..$
-.#..$
-....$
-$
-....$
-###.$
-.#..$
-....$
-
-Than write command make
-And 
-./fillit <your_filename>
